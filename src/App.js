@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="app vin-header">
-      <h1>IceWrap Frontend Task</h1>
+      <h1>IceWrap Frontend Task done</h1>
       <button className="open-btn" onClick={() => setIsOpen(true)}>
         Open Dialog
       </button>
