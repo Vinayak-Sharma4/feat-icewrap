@@ -3,13 +3,17 @@ import React, { useState } from 'react';
 // import DialogWindow from './components/Dialog/DialogWindow';
 import DialogWindow from './Components/Dialog/DialogWindow';
 import { FaInfoCircle } from 'react-icons/fa';
+import contentImg from './img/content-img5.jpg';
+import dialogImg from './img/content-img1.jpg'
 import "./App.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const headerButtons = [
-    { label: 'Close', onClick: () => setIsOpen(false) }
+    { label: 'Homepage', onClick: () => setIsOpen(false) },
+    { label: 'Contact', onClick: () => setIsOpen(false) },
+    { label: 'Open', onClick: () => setIsOpen(false) }
   ];
 
   const footerButtons = [
@@ -18,11 +22,13 @@ function App() {
   ];
 
   return (
+    <>
     <div className="app vin-header">
-      <h1>IceWrap Frontend Task done</h1>
+      <h1>IceWrap Frontend Task </h1>
       <button className="open-btn" onClick={() => setIsOpen(true)}>
         Open Dialog
       </button>
+      
 
       <DialogWindow
         isOpen={isOpen}
@@ -31,13 +37,19 @@ function App() {
           title: 'IceWrap Task',
           buttons: headerButtons
         }}
-        content={<p>This is the dialog content. Add your message here.</p>}
+        content={
+          <img src={dialogImg} alt='content' style={{width: "100%", height:"100%"}}></img>
+        // <p>This is the dialog content. Add your message here.</p>
+      }
         footerData={{
           buttons: footerButtons,
           info: 'This is optional info text.'
         }}
       />
+      
     </div>
+    <div className='back-img'><img src={contentImg} style={{width:"100%"}}></img></div>
+    </>
   );
 }
 

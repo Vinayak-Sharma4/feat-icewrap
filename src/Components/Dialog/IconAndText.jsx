@@ -1,9 +1,9 @@
 // src/components/Dialog/IconAndText.jsx
 import React from 'react';
 
-export const IconAndText = ({ icon: Icon, text }) => (
+export const IconAndText = ({ icon, text }) => (
   <div className="icon-text">
-    {Icon && <Icon className="icon" />}
-    <span>{text}</span>
+    {icon && <img style={{width: "52px"}} src={icon} alt="icon" className="icon" />}
+    <span style={{padding: "0px 40px"}}>{text}</span>
   </div>
 );

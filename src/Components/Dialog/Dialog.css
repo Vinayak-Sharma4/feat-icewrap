@@ -12,7 +12,7 @@
 }
 
 .dialog-window {
-  background: darkseagreen;
+  background: #fff;
   width: 90%;
   height: 90%;
   border-radius: 10px;
@@ -23,15 +23,16 @@
 .dialog-header,
 .dialog-footer {
   padding: 10px;
-  background: darkseagreen;
+  /* background: url('src/img/background-img1.jpg'); */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 46px;
 }
 
 .dialog-content {
   padding: 20px;
-  background: darkseagreen;
+  height: 500px;
 }
 
 .icon-text {
@@ -46,12 +47,14 @@
 }
 
 .dialog-button {
-  padding: 5px 10px;
+  padding: 10px 20px;
   cursor: pointer;
   background: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .dialog-button:hover {
