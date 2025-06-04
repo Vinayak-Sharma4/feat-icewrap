@@ -6,6 +6,27 @@
   height: 40vmin;
   pointer-events: none;
 }
+.vin-header{
+position: relative;
+height: 200px;
+background: darkseagreen;
+padding: 1px 30px;
+}
+.vin-header .open-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    width: 10%;
+    margin-top: 21px;
+    float: right;
+}
+.vin-header h1 {
+    width: 30%;
+    position: relative;
+    float: left;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
