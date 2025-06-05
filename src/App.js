@@ -43,7 +43,8 @@ function App() {
       }
         footerData={{
           buttons: footerButtons,
-          info: 'This is optional info text.'
+          // info: 'This is optional info text.',
+          list: ['Home', 'Contact', 'Testimonials', 'Product']
         }}
       />
       

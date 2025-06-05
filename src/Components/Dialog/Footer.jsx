@@ -1,12 +1,20 @@
-// src/components/Dialog/Footer.jsx
 import React from 'react';
 import ButtonGroup from './ButtonGroup';
 
-const Footer = ({ buttons = [], info }) => {
+const Footer = ({ buttons = [], info, list = [] }) => {
   return (
     <div className="dialog-footer">
-      <div className="info-text">{info}</div>
-      <ButtonGroup buttons={buttons} />
+      <div className="footer-left">
+        <ul className="footer-list">
+          {list.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        {info && <p className="info-text">{info}</p>}
+      </div>
+      <div className="footer-right">
+        <ButtonGroup buttons={buttons} />
+      </div>
     </div>
   );
 };
